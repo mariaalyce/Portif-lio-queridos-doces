@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queridos Doces</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+
+      <!-- Perfil -->
+      <div id="profile">
+        <img src="./imagem/Queridos doces.png" alt="Queridos doces" />
+        <p style="font-family: Arial, sans-serif; font-weight: bold;">
+          @QueridosDoces
+        </p>
+      </div>
+
+      <!-- MENU PRINCIPAL -->
+      <ul>
+        <li><a href="#">Conheça nosso cardápio</a></li>
+        <li><a href="https://wa.me/5581986646251" target="_blank">Acesse o nosso WhatsApp</a></li>
+
+        <!-- MOSTRAR / ESCONDER SOBRE NÓS -->
+        <li><a href="#" onclick="mostrarSobreNos()">Sobre nós</a></li>
+
+        <li><a href="#">Redes sociais</a></li>
+      </ul>
+
+      <!-- SEÇÃO SOBRE NÓS (ESCONDIDA) -->
+      <section id="sobre-nos" class="escondido">
+        <h2>Sobre nós</h2>
+        <p>
+          A Queridos Doces nasceu de um carinho especial: nossos amigos sempre nos chamaram de “queridos”, e esse apelido acabou virando o nome perfeito para algo feito com tanto amor.  
+          Aqui, cada doce é preparado com cuidado, sabor e aquele toque caseiro que abraça o coração.  
+          Nossa missão é adoçar momentos e transformar pequenos gestos em memórias deliciosas.  
+          Seja muito bem-vindo(a) ao nosso mundo de sabores! 🍬💖
+        </p>
+      </section>
+
+      <!-- Rodapé -->
+      <footer>
+        Feito com ♥  
+        <a href="#" target="_blank">Queridos Doces</a>
+      </footer>
+
+      <!-- Ícones -->
+      <div id="social-links">
+        <a href="https://www.instagram.com/maarialyce/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://wa.me/5581986646251" target="_blank">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+      </div>
+
+      <ion-icon name="heart"></ion-icon>
+
+    </div>
+
+    <!-- Scripts dos ícones -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- FUNÇÃO PARA MOSTRAR E ESCONDER SOBRE NÓS -->
+    <script>
+      function mostrarSobreNos() {
+        const secao = document.getElementById("sobre-nos");
+        secao.classList.toggle("escondido");
+      }
+    </script>
+
+  </body>
+</html>
